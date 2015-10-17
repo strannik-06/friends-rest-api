@@ -1,0 +1,4 @@
+services:
+    app.user:
+        class: AppBundle\Service\User
+        arguments: [@doctrine_mongodb, @doctrine.odm.mongodb.document_manager]
